@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .about__container{
+    row-gap: 3rem;
+}
+
+.about__data{
+    text-align: center;
+}
+.abou__description{
+    margin-bottom: 2rem;
+}
+
+.about__image{
+    position: relative;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.about__img{
+    width: 100%;
+    transition: transform .4s;
+}
+
+.about__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,hsla(0,0%,0%,0),hsl(0,0%,0%,)125%);
+}
+
+.about__image:hover .about__img{
+    transform: scale(1.2);
+}
+ */
+
+
+
+.autoShow{
+    animation:autoShowAnimation both;
+    /* timeline-view to show animation while running  */
+    animation-timeline: view(60% 10%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+

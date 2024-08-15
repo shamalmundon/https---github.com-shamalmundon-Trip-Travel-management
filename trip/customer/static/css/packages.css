@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+body .ph {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    letter-spacing: .5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.ShowAuto{
+    animation:autoShowAnimation both;
+    /* timeline-view to show animation while running  */
+    animation-timeline: view(60% 10%);
+  }
+  @keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+  }

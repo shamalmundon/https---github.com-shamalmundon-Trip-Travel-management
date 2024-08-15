@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+        <nav style="height: 80px;" class="navbar navbar-light bg-dark">
+            <form class="container-fluid justify-content-start">
+              <a href="{% url 'home' %}" class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-house"></i> Home</a>
+            </form>
+          </nav>
+          <h1 style="text-align: center; font-size: 100px;">CONTACT US</h1>
+          <div style="text-align: center;">
+            <h1>We're Here to Help You Explore the World!</h1>
+            <p style="padding: 50px;">At <span style="font-weight: 600;">ONE STEP</span> Travel agency, your travel dreams are our top priority. Whether you’re planning a relaxing beach vacation, an adventurous mountain trek, or a cultural city tour, our dedicated team is here to assist you every step of the way.</p>
+            <h2>Get in Touch</h2>
+            <p>Phone: Reach us directly at <span style="font-weight: 600;"><i class="fa-solid fa-phone"></i> +91 1111111111</span>. Our travel experts are available <span style="font-weight: 600;">Monday to Friday from 9:00 AM to 6:00 PM.</span> <br>
+
+                Email: Have a question or need a quote? Send us an email at <span style="font-weight: 600;"><i class="fa-solid fa-envelope"></i> onestep@gmail.com</span> and we’ll get back to you within 24 hours. <br>
+                
+                Social Media: Connect with us on <span style="font-weight: 600;"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-square-x-twitter"></i> <i class="fa-brands fa-square-threads"></i> OneStepTravel</span> for the latest travel deals, tips, and inspiration. <br></p>
+          </div>
+          <div style="background-color: green;">
+            <h1 style="text-align: center; font-size: 100px;">ABOUT US</h1>
+            <div style="text-align: center;">
+                <h1>Let's Plan Your Next Adventure</h1>
+                <p style="padding-left: 50px;padding-right: 50px; padding-top: 10px; padding-bottom: 10px;">Whether you're ready to book your trip or just exploring options, we’re here to help. Contact us today and let’s start planning your next unforgettable journey!</p>
+                <h1>OUR STORY</h1>
+                <p style="padding: 50px;">OnStep Travel Agency was born out of a passion for exploration and a desire to share the wonders of the world with others. Our founder, SHAMAL, envisioned a travel agency that would cater to the unique needs and dreams of each traveler. Since then, we have grown into a trusted name in the industry, known for our dedication to customer satisfaction and attention to detail.</p>
+                <h1>Why Choose OnStep Travel Agency?</h1>
+                <ul style="padding-left: 50px;padding-right: 50px; padding-top: 10px; padding-bottom: 10px;">
+                    <li>Expert Knowledge: Our team of travel consultants has extensive knowledge of destinations around the globe, ensuring you receive the best advice and recommendations.</li>
+                    <li>Personalized Service: We take the time to understand your travel goals and preferences, creating bespoke itineraries just for you.</li>
+                    <li>Competitive Prices: We offer great value for your money with competitive pricing and exclusive deals.</li>
+                    <li>24/7 Support: Our dedicated support team is available around the clock to assist you before, during, and after your trip.</li>
+                </ul>
+                <h1 style="text-align: center; font-size: 50px;">Let's Explore Together</h1>
+                <p style="padding-left: 50px;padding-right: 50px; padding-top: 10px; padding-bottom: 10px; font-weight: 600;">Join us at OnStep Travel Agency and take the first step towards your next adventure. Whether you’re dreaming of a tropical paradise, a historic city tour, or an off-the-beaten-path experience, we’re here to make it happen. Contact us today and let’s start planning your perfect trip!</p>
+                
+            </div>
+          </div>
+          <!-- ...................................FOOTER...............................  -->
+ <div style="height: 25vh;width: 100%; background-color: rgb(45, 43, 43);">
+    {% include 'footer.html' %}
+   </div>
+  
+    </body>
+</html>

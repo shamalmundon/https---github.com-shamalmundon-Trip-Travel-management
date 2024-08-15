@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- google font  -->
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+            input::placeholder {
+                color: #eaf3f3;
+                opacity: 1; /* Override default opacity */
+            }
+
+            .form-control:focus {
+                box-shadow: none;
+                border-color: transparent;
+            }
+            nav{
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+            }
+            body .navbar{
+                position: fixed;
+                padding-left: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light  text-white shadow" style="height: 60px; background: #373535; z-index: 2; width: 100%;">
+            <div class="container-fluid text-white">
+                <a style="padding-left: 5px;" class="navbar-brand text-dark" href="#"><img src="{% static 'logo.png'%}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="margin-left: 100px;">
+                        <li class="nav-item">
+                            <a  class="nav-link active text-white" aria-current="page" href="#"><i style="color: #017479;" class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="{% url 'popular' %}"><i class="fa-solid fa-fire"></i> Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="{% url 'package' %}"><i class="fa-solid fa-suitcase-rolling" style="color: #ffffff;"></i> Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="{% url 'gallary' %}"><i class="fa-brands fa-envira" style="color: #ffffff;"></i> Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="{% url 'contact' %}"><i class="fa-solid fa-address-book"></i> Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <div class="d-flex" style="margin-right: 150px; border: 1px solid #017479; border-radius: 10px;">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="border: none; background-color: transparent;">
+                            <button id="searchbtn" class="btn text-white" type="submit" style="background-color: #017479;">Search</button>
+                        </div>
+                        <a style="background-color: #017479;" class="btn text-white" href="{% url 'login' %}"><i class="fa-solid fa-user fa-bounce" style="color: #000000;"></i> <span style="font-weight: 800;">SIGN</span></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
+
+{% block nav %}
+{% endblock nav %}
